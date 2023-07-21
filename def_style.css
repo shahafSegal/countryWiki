@@ -1,25 +1,27 @@
 body{
     margin: 0;
-    margin-top: 160px;
+    margin-top: 30%;
 }
 
-article{
-    margin-left: 50px;
-    padding: 2.5%;
+header h2{
+    font-size: 3vh;
+}
+
+article,header,footer{
+    margin-left: 10%;
+    width: 90%;
 }
 
 header{
+    height: 17%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 10px;
+    padding: 1px;
 }
 footer{
     text-align: center;
-    width: 100%;
     padding: 10px;
-    margin: 0;
 }
 
 table {
@@ -31,20 +33,69 @@ table {
 
 td, th {padding: 8px; }
 
-
 a,span{
     text-decoration: none;
 }
 
+.cenContent {
+    display: flex;
+    justify-content: center;
+}
+
+.lContent, .rContent {
+    flex: 1;
+}
+
+.rContent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+
 .cName{
-    display: inline;
-    text-align: left;
-    font-size: 3em;
+    font-size: 3vh;
     color: blue;
 }
 
 .miniflag{
-    width: 10%;
-    float: right;
-    
+    height: 6vh;
 }
+
+.sidenav {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .sidenav a {
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  

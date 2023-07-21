@@ -10,6 +10,9 @@ header{
 h3,h4{
     color: #ff7300;
 }
+.cName{
+    color:#250cb7;
+}
 footer{
     background-color: #D6AD60;
     color: #5240b6;
