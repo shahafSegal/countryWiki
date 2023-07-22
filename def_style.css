@@ -3,6 +3,14 @@ body{
     margin-left: 10vw;
     width: 90%;
     z-index: 50;
+    min-height: 75vh;
+    flex: 1;
+
+    
+}
+
+form{
+    padding: 10px;
 }
 
 body article{
@@ -13,12 +21,13 @@ header h2{
     font-size: 3vh;
    
 }
-article{
+article ,form{
     padding-left: 10px;
     width: 80%;
 }
-article li::after{
-    content: '\A\A'; 
+
+article li::after , form label::before ,form label::after{
+    content: '\A'; 
     white-space: pre; 
     display: block;
 }
@@ -33,17 +42,18 @@ header{
     padding: 1px;
     z-index: 100;
 }
-footer{
-    text-align: center;
-    padding: 10px;
-}
-
 table {
     border-collapse: collapse;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
 
 td, th {padding: 8px; }
 
@@ -101,15 +111,18 @@ a,span{
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #c1c1c1;
   }
   
   .main {
     margin-left: 200px; /* Same as the width of the sidenav */
   }
+
+  
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
   

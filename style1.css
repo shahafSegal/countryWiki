@@ -9,13 +9,18 @@ header{
     color:#ffd700
 }
 
-h3,h4, .cName,  article b{
+h3,h4, .cName, b{
     color: #ff7300;
 }
 
 footer{
     background-color: #5d5d6d;
     color: #6a9955;
+}
+
+form input ,form textarea{
+    background-color: #6f6f6f ;
+    color:#ffd700
 }
 
 table {
