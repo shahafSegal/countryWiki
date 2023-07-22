@@ -3,9 +3,6 @@ body{
     margin-left: 10vw;
     width: 90%;
     z-index: 50;
-    min-height: 75vh;
-    flex: 1;
-
     
 }
 
@@ -22,8 +19,8 @@ header h2{
    
 }
 article ,form{
-    padding-left: 10px;
-    width: 80%;
+    padding-left: 3vw;
+    width: 85vw;
 }
 
 article li::after , form label::before ,form label::after{
@@ -47,6 +44,11 @@ table {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    font-size: 2vmin;
+}
+table img{
+    height: 6vmin;
 }
 
 footer{
@@ -61,19 +63,7 @@ a,span{
     text-decoration: none;
 }
 
-.cenContent {
-    display: flex;
-    justify-content: center;
-}
 
-.lContent, .rContent {
-    flex: 1;
-}
-
-.rContent {
-    display: flex;
-    justify-content: flex-end;
-}
 
 .container{
     display: flex;
@@ -81,13 +71,40 @@ a,span{
 }
 
 
+.lContent, .rContent ,  .rContentGr{
+    flex: 1;
+    margin: auto;
+}
+
+.rContent {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.cenContent{
+    margin: auto;
+}
+
+
+.gContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.gContainer video{
+    width: 25vmin;
+}
+
+
 .cName{
     font-size: 3vh;
-    color: blue;
 }
 
 .miniflag{
-    height: 6vh;
+    display: block;
+    width: 6vh;
 }
 
 .sidenav {
@@ -102,12 +119,17 @@ a,span{
     padding-top: 20px;
   }
   
-  .sidenav a {
+  .sidenav a ,.sidenav div {
     padding: 6px 6px 6px 6px;
     text-decoration: none;
     font-size: 2vw;
     color: #818181;
     display: block;
+  }
+
+  .sidenav div{
+    background-color: rgb(0, 62, 0);
+    
   }
   
   .sidenav a:hover {

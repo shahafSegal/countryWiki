@@ -23,11 +23,20 @@ form input ,form textarea{
     color:#ffd700
 }
 
-table {
+
+body table{
+    border: 2px solid #ff7300;
+}
+
+body td, body th {
+    border: 1px solid #ffd700;
+}
+
+footer table {
     border: 2px solid #456338; 
   }
   
-  td, th {
+footer td, footer th {
     border: 1px solid #456338; 
   }
 
