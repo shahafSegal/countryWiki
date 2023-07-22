@@ -9,7 +9,7 @@ header{
     color:#ffd700
 }
 
-h3,h4, .cName{
+h3,h4, .cName,  article b{
     color: #ff7300;
 }
 
@@ -25,6 +25,8 @@ table {
   td, th {
     border: 1px solid #456338; 
   }
+
+
 
 a,span{
     
