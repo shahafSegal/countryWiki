@@ -5,7 +5,7 @@ $(function() {
         
         // Dynamically update the paragraph based on the page title
         var pageTitle = document.title;
-        $('#header-paragraph').text("changed"+pageTitle);
+        $('#header-paragraph').text(pageTitle);
     });
 
     /* div with id=common-footer change to be footer.html*/
