@@ -55,6 +55,7 @@ table img{
 
 .prjTbl{
     display: block;
+    width: fit-content;
     max-height: 20vh;
     overflow-y: scroll;
 }
